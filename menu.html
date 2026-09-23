@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/img/favicon.svg" type="image/x-icon">
+    <script src="./js/scripts.js" defer></script>
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <header>
+      <a href="index.html" class="head-logo">
+        <img src="./assets/img/logo.svg" alt="Resource coffee house" id="logo">
+      </a>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html#FavoriteCoffee">
+              Favorite coffee
+            </a>
+          </li>
+          <li>
+            <a href="index.html#About">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="index.html#MobileApp">
+              Mobile app
+            </a>
+          </li>
+          <li>
+            <a href="index.html#ContactUs">
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header actions -->
+      <div class="header-actions">
+
+        <!-- Theme switcher -->
+        <label class="theme-switcher" for="theme-toggle">
+          <!-- Hidden checkbox that stores the state -->
+          <input type="checkbox" id="theme-toggle">
+          <!-- Visual slider -->
+          <span class="slider">
+            <!-- Slider knob -->
+            <span class="knob"></span>
+          </span>
+        </label>   
+    
+        <!-- Menu link -->
+        <a href="menu.html" class="head-coffee-menu disabled">
+          Menu
+          <span class="img"></span>
+        </a>
+
+        <!-- Burger button -->
+        <button class="burger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+        </button>
+
+      </div>
+
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <div class="menu-container">
+        
+        <!-- Heading -->
+        <h2>
+          Behind each of our cups hides an 
+          <span class="accent">
+            amazing surprise
+          </span>
+        </h2>
+        
+        <!-- Category buttons -->
+        <div>
+          <button class="categories-button active">
+            <img src="./assets/img/coffee-tab.png" alt="Coffee">
+            Coffee
+          </button>
+          <button class="categories-button">
+            <img src="./assets/img/tea-tab.png" alt="Tea">
+            Tea
+          </button>
+          <button class="categories-button">
+            <img src="./assets/img/dessert-tab.png" alt="Dessert">
+            Dessert
+          </button>
+        </div>
+        <h1 class="hide">menu</h1>
+        <!-- Menu items -->
+        <section id="catalog">
+          <h2 class="hide">catalog</h2>
+          
+          <!-- Card template -->
+          <template id="card-template">
+            <article id="inner-article">
+              <!-- Image -->
+              <div><img src="" alt="" id="inner-card-img"></div>            
+              <!-- Title -->
+              <h3 id="inner-card-title"></h3>
+              <!-- Description -->
+              <span class="medium" id="inner-card-description"></span>
+              <!-- Price -->
+              <h3 id="inner-card-price"></h3>            
+            </article>
+          </template>
+        </section>
+
+        <button class="loadMore">
+          <span></span>
+        </button>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="ContactUs">
+      <!-- Footer container -->
+      <div class="footer-container">
+        
+        <!-- Footer offer -->
+        <div class="footer-container-offer">
+          <h2>
+            Sip, Savor, Smile.
+            <span class="accent">              
+              It’s coffee time!              
+            </span>
+          </h2>
+          
+          <ul class="footer-container-offer-list">
+            <li>
+              <a href="https://twitter.com">
+                <span class="footer-social-img twitter"></span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://instagram.com">
+                <span class="footer-social-img instagram"></span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://facebook.com">
+                <span class="footer-social-img facebook"></span>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <!-- Contact information -->
+        <div class="footer-container-contacts-info">
+          <h3>Contact us</h3>
+          <div class="footer-container-contacts-info-contacts">
+            
+            <ul class="footer-contacts-list">
+
+              <!-- Map -->
+              <li>
+                <a href="https://maps.app.goo.gl/DehpsBXX7xzd6ujC8" target="_blank">
+                  <img src="./assets/img/map.svg" alt="Map" class="footer-contacts-img">
+                  8558 Green Rd., LA
+                </a>
+              </li>
+
+              <!-- Phone -->
+              <li>
+                <a href="tel:+16035550123">
+                  <img src="./assets/img/phone.svg" alt="Phone" class="footer-contacts-img">
+                  +1 (603) 555-0123
+                </a>
+              </li>
+
+              <!-- Opening hours -->
+              <li>
+                <img src="./assets/img/clock.svg" alt="Clock" class="footer-contacts-img">
+                Mon–Sat: 9:00–23:00
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    
+  </body>
+</html>
