@@ -2,113 +2,225 @@
   {
     "name": "S'mores Frappuccino",
     "description": "Espresso with brown sugar, cinnamon, and oat milk.",
-    "price": "5.50",
+    "price": 5.5,
     "category": "coffee",
-    "img": "./assets/img/coffee-1.svg"
+    "img": "./assets/img/coffee-1.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": [
+      { "name": "Cinnamon", "price": 0.3 },
+      { "name": "Whipped milk", "price": 0.5 },
+      { "name": "Chocolate syrup", "price": 0.7 }
+    ]
   },
   {
     "name": "Caramel Macchiato",
     "description": "Rich espresso with vanilla, steamed milk, and caramel.",
-    "price": "5.00",
+    "price": 5,
     "category": "coffee",
-    "img": "./assets/img/coffee-2.svg"
+    "img": "./assets/img/coffee-2.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": [
+      { "name": "Cinnamon", "price": 0.3 },
+      { "name": "Whipped milk", "price": 0.5 },
+      { "name": "Chocolate syrup", "price": 0.7 }
+    ]
   },
   {
     "name": "Caffe Latte",
     "description": "Smooth espresso balanced with steamed milk.",
-    "price": "4.50",
+    "price": 4.5,
     "category": "coffee",
-    "img": "./assets/img/coffee-3.svg"
+    "img": "./assets/img/coffee-3.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": [
+      { "name": "Cinnamon", "price": 0.3 },
+      { "name": "Whipped milk", "price": 0.5 },
+      { "name": "Chocolate syrup", "price": 0.7 }
+    ]
   },
   {
     "name": "Caffe Americano",
     "description": "Bold espresso softened with hot water.",
-    "price": "3.50",
+    "price": 3.5,
     "category": "coffee",
-    "img": "./assets/img/coffee-4.svg"
+    "img": "./assets/img/coffee-4.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": [
+      { "name": "Cinnamon", "price": 0.3 },
+      { "name": "Whipped milk", "price": 0.5 },
+      { "name": "Chocolate syrup", "price": 0.7 }
+    ]
   },
   {
     "name": "Cappuccino",
     "description": "Espresso with textured milk and a soft foam finish.",
-    "price": "4.75",
+    "price": 4.75,
     "category": "coffee",
-    "img": "./assets/img/coffee-5.svg"
+    "img": "./assets/img/coffee-5.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": [
+      { "name": "Cinnamon", "price": 0.3 },
+      { "name": "Whipped milk", "price": 0.5 },
+      { "name": "Chocolate syrup", "price": 0.7 }
+    ]
   },
   {
     "name": "Espresso",
     "description": "A concentrated shot with a rich, lasting crema.",
-    "price": "3.00",
+    "price": 3,
     "category": "coffee",
-    "img": "./assets/img/coffee-6.svg"
+    "img": "./assets/img/coffee-6.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": [
+      { "name": "Cinnamon", "price": 0.3 },
+      { "name": "Whipped milk", "price": 0.5 },
+      { "name": "Chocolate syrup", "price": 0.7 }
+    ]
   },
   {
     "name": "Cold Brew",
     "description": "Slow-steeped coffee served chilled and smooth.",
-    "price": "4.50",
+    "price": 4.5,
     "category": "coffee",
-    "img": "./assets/img/coffee-7.svg"
+    "img": "./assets/img/coffee-7.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": [
+      { "name": "Cinnamon", "price": 0.3 },
+      { "name": "Whipped milk", "price": 0.5 },
+      { "name": "Chocolate syrup", "price": 0.7 }
+    ]
   },
   {
     "name": "Mocha",
     "description": "Espresso, chocolate, and steamed milk in one cup.",
-    "price": "5.25",
+    "price": 5.25,
     "category": "coffee",
-    "img": "./assets/img/coffee-8.svg"
+    "img": "./assets/img/coffee-8.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": [
+      { "name": "Cinnamon", "price": 0.3 },
+      { "name": "Whipped milk", "price": 0.5 },
+      { "name": "Chocolate syrup", "price": 0.7 }
+    ]
   },
   {
     "name": "English Breakfast",
     "description": "A full-bodied black tea for a classic start.",
-    "price": "3.50",
+    "price": 3.5,
     "category": "tea",
-    "img": "./assets/img/tea-1.svg"
+    "img": "./assets/img/tea-1.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": []
   },
   {
     "name": "Earl Grey",
     "description": "Black tea with bright bergamot and citrus notes.",
-    "price": "3.50",
+    "price": 3.5,
     "category": "tea",
-    "img": "./assets/img/tea-2.svg"
+    "img": "./assets/img/tea-2.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": []
   },
   {
     "name": "Green Tea",
     "description": "Light, refreshing tea with a clean finish.",
-    "price": "3.25",
+    "price": 3.25,
     "category": "tea",
-    "img": "./assets/img/tea-3.svg"
+    "img": "./assets/img/tea-3.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": []
   },
   {
     "name": "Herbal Tea",
     "description": "A fragrant caffeine-free blend served warm.",
-    "price": "3.25",
+    "price": 3.25,
     "category": "tea",
-    "img": "./assets/img/tea-4.svg"
+    "img": "./assets/img/tea-4.svg",
+    "sizes": [
+      { "name": "Small", "price": 0 },
+      { "name": "Medium", "price": 0.5 },
+      { "name": "Large", "price": 1 }
+    ],
+    "toppings": []
   },
   {
     "name": "Cinnamon Roll",
     "description": "Soft pastry layered with cinnamon and icing.",
-    "price": "4.00",
+    "price": 4,
     "category": "dessert",
-    "img": "./assets/img/dessert-1.svg"
+    "img": "./assets/img/dessert-1.svg",
+    "sizes": [],
+    "toppings": []
   },
   {
     "name": "Cheesecake",
     "description": "Creamy cheesecake with a crisp biscuit base.",
-    "price": "5.00",
+    "price": 5,
     "category": "dessert",
-    "img": "./assets/img/dessert-2.svg"
+    "img": "./assets/img/dessert-2.svg",
+    "sizes": [],
+    "toppings": []
   },
   {
     "name": "Brownie",
     "description": "A rich chocolate brownie with a fudgy center.",
-    "price": "4.50",
+    "price": 4.5,
     "category": "dessert",
-    "img": "./assets/img/dessert-3.svg"
+    "img": "./assets/img/dessert-3.svg",
+    "sizes": [],
+    "toppings": []
   },
   {
     "name": "Fruit Tart",
     "description": "Buttery pastry topped with cream and fresh fruit.",
-    "price": "4.75",
+    "price": 4.75,
     "category": "dessert",
-    "img": "./assets/img/dessert-4.svg"
+    "img": "./assets/img/dessert-4.svg",
+    "sizes": [],
+    "toppings": []
   }
 ]
