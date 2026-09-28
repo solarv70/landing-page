@@ -108,18 +108,40 @@
           
           <!-- Card template -->
           <template id="card-template">
-            <article id="inner-article">
+            <article>
               <!-- Image -->
-              <div><img src="" alt="" id="inner-card-img"></div>            
+              <div><img src="" alt=""></div>
               <!-- Title -->
-              <h3 id="inner-card-title"></h3>
+              <h3></h3>
               <!-- Description -->
-              <span class="medium" id="inner-card-description"></span>
+              <span class="medium"></span>
               <!-- Price -->
-              <h3 id="inner-card-price"></h3>            
+              <h3></h3>
             </article>
           </template>
+
+          <div id="cards-container"></div>
         </section>
+
+        <div class="modal-overlay" id="product-modal" hidden aria-hidden="true">
+          <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" type="button" aria-label="Close modal">×</button>
+            <img class="modal-image" id="modal-image" alt="">
+            <div class="modal-info">
+              <h2 id="modal-title"></h2>
+              <p class="medium" id="modal-description"></p>
+              <div class="modal-option-group" id="modal-sizes-group" hidden>
+                <h3>Size</h3>
+                <div class="modal-options" id="modal-sizes"></div>
+              </div>
+              <div class="modal-option-group" id="modal-toppings-group" hidden>
+                <h3>Additives</h3>
+                <div class="modal-options" id="modal-toppings"></div>
+              </div>
+              <h3 id="modal-price"></h3>
+            </div>
+          </div>
+        </div>
 
         <button class="loadMore">
           <span></span>

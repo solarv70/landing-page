@@ -47,6 +47,10 @@ body {
     background: var(--PageBg);
 }
 
+body.mobile-menu-open {
+    overflow: hidden;
+}
+
 
 h1 {
     font-size: 72px;
@@ -461,6 +465,12 @@ main {
                 flex-wrap: wrap;
                 align-content: space-between;
                 justify-content: center;
+                transition: opacity 0.25s ease, transform 0.5s ease;
+
+                &.is-changing {
+                    opacity: 0;
+                    transform: translateX(20px);
+                }
 
 
                 img {
@@ -719,6 +729,10 @@ main {
             margin-top: 40px;
             gap: 40px;
 
+            #cards-container {
+                display: contents;
+            }
+
             article {
                 /* border: 1px solid blue;  */
                 border: 1px solid var(--PrimaryBorder);
@@ -796,6 +810,113 @@ main {
             }
         }
     }    
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: var(--OverlayBg);
+}
+
+.modal-overlay[hidden] {
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    width: min(800px, 100%);
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: var(--PageBg);
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--InverseBorder);
+    border-radius: 100px;
+    color: var(--PrimaryText);
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 310px;
+    height: 310px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.modal-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.modal-option-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.modal-option {
+    min-height: 40px;
+    padding: 8px 16px;
+    border: 1px solid var(--PrimaryBorder);
+    border-radius: 100px;
+    color: var(--PrimaryText);
+    cursor: pointer;
+}
+
+.modal-option.selected,
+.modal-option:hover {
+    border-color: var(--ContainerBg);
+    background-color: var(--ContainerBg);
+    color: var(--InverseText);
+}
+
+@media screen and (max-width: 767px) and (min-width: 380px) {
+    main .menu-container .modal-overlay {
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    main .menu-container .modal-overlay .modal-content {
+        flex-direction: column;
+        gap: 20px;
+        height: calc(100vh - 32px);
+        max-height: calc(100vh - 32px);
+        margin-top: 0;
+        padding: 24px;
+    }
+
+    .modal-image {
+        width: 100%;
+        height: auto;
+    }
 }
 
 footer {
@@ -1026,6 +1147,28 @@ footer {
 }
 
 @media screen and (max-width:768px) {
+    header nav.menu-open {
+        position: fixed;
+        top: 100px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        display: block;
+        width: 100%;
+        padding: 60px 16px;
+        background-color: var(--PageBg);
+        overflow-y: auto;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            margin: 0;
+        }
+    }
+
     header {       
         .header-actions {
             width: 172px;
@@ -1089,8 +1232,8 @@ footer {
             display: flex;
             flex-direction: column;
             
-            button{
-                display: none;
+            > button{
+                display: flex;
             }
 
             .favorite-coffee-slidebar {
